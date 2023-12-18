@@ -25,8 +25,7 @@ try {
     $datosActualizados = [
         'empleados' => $cantidadEmpleados,
         'sedes' => $cantidadSedes,
-        'empleadosPorSede' => $emplead
-        osPorSede,
+        'empleadosPorSede' => $empleadosPorSede,
         'nombresEmpleadosPorSede' => $nombresEmpleadosPorSede, 
     ];
 
