@@ -16,10 +16,6 @@ CREATE TABLE marcas
 
 
 
-
-
-
-
 INSERT INTO marcas(marca)
 	VALUES
     ('Toyota'),
@@ -70,6 +66,10 @@ INSERT INTO sedes(sede)
 			VALUES('Ayacucho'),
 				('Lima');
 
+
+UPDATE empleados SET
+nombres = "Victor Cesár"
+WHERE idempleado = 6;
 
 CREATE TABLE empleados(
 idempleado		INT AUTO_INCREMENT PRIMARY KEY,

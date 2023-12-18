@@ -10,8 +10,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<!-- ... (Tu código existente) ... -->
-
 <body>
 
     <style>
@@ -31,10 +29,10 @@
 
         <h1 class="text-center w-25 text-primary fw-bold mt-1 mb-2 p-1 ">Informe General</h1>
 
-        <!-- Contenedor de los gráficos -->
+       
         <div class="row justify-content-center align-items-center">
 
-            <!-- Gráfico de Empleados y Sedes -->
+            
             <div class="col-md-6 mb-3">
                 <canvas id="graficoGeneral" width="150" height="100"></canvas>
             </div>
@@ -165,7 +163,7 @@ function actualizarGrafico(datosSedes) {
                 const listItem = document.createElement('li');
                 listItem.className = 'list-group-item mb-3 mt-2';
 
-                // Asegurarse de que nombres_empleados[0] sea un array de strings
+                
                 const nombresEmpleados = Array.isArray(sede.nombres_empleados[0])
                     ? sede.nombres_empleados[0]
                     : [sede.nombres_empleados[0]];
@@ -175,7 +173,7 @@ function actualizarGrafico(datosSedes) {
             });
         }
 
-        // Actualizar gráficos y lista al cargar la página
+       
         obtenerDatos()
             .then(datos => {
                 actualizarGrafico(datos.empleadosPorSede);

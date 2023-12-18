@@ -25,8 +25,9 @@ try {
     $datosActualizados = [
         'empleados' => $cantidadEmpleados,
         'sedes' => $cantidadSedes,
-        'empleadosPorSede' => $empleadosPorSede,
-        'nombresEmpleadosPorSede' => $nombresEmpleadosPorSede, // Agregar los nombres de los empleados
+        'empleadosPorSede' => $emplead
+        osPorSede,
+        'nombresEmpleadosPorSede' => $nombresEmpleadosPorSede, 
     ];
 
     echo json_encode($datosActualizados);

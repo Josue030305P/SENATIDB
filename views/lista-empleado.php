@@ -61,7 +61,6 @@
                     datos.forEach(element => {
                         const tagTr = document.createElement('tr');
 
-                        // Crear una celda para cada propiedad y agregarla a la fila
                         const propiedades = ['idempleado', 'sede', 'apellidos', 'nombres', 'ndocumento', 'fechanacimiento', 'telefono'];
 
                         propiedades.forEach(propiedad => {
@@ -70,7 +69,7 @@
                             tagTr.appendChild(tagTd);
                         });
 
-                        // Asignar la clase 'empleado' a la fila
+                        
                         tagTr.classList.add('empleado');
 
                         $("#contenido-tabla-empleado").appendChild(tagTr);
